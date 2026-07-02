@@ -2,33 +2,33 @@
   <img src="banner.jpg" alt="AddSpotWhite Banner" width="100%">
   
   <h1>🖌️ AddSpotWhite</h1>
-  <p><b>Скрипт для Adobe Illustrator для автоматической генерации каналов Spot White (выборочного белого) для печати.</b></p>
+  <p><b>Adobe Illustrator script for automatic generation of Spot White channels for print.</b></p>
   
   <p>
-    <a href="#описание">Описание</a> •
-    <a href="#особенности">Особенности</a> •
-    <a href="#установка">Установка</a> •
-    <a href="README_EN.md">English Version</a>
+    <a href="#description">Description</a> •
+    <a href="#features">Features</a> •
+    <a href="#installation">Installation</a> •
+    <a href="README_EN.md">Old English README</a>
   </p>
 </div>
 
 ---
 
-## 🎨 Описание
-**AddSpotWhite** — это мощный скрипт для Adobe Photoshop (`SPOT_WHITE.jsx`), который автоматизирует процесс создания плашечного канала (Spot Color) белого цвета (`Spot_White`) для подготовки изображений к печати. 
+## 🎨 Description
+**AddSpotWhite** is a powerful Adobe Photoshop script (`SPOT_WHITE.jsx`) that automates the process of creating a Spot White channel (`Spot_White`) to prepare images for professional printing.
 
-Скрипт переводит документ в цветовую модель CMYK, выделяет видимые (непрозрачные) пиксели изображения и создает специальный канал, где черным цветом (100%) обозначается область, подлежащая покрытию белилами. После этого файл сохраняется в формате TIFF.
+The script converts the document into the CMYK color model, isolates the visible (opaque) pixels of the image, and generates a dedicated channel where 100% black represents the area to be covered with white ink. Finally, it saves the output as a TIFF file.
 
-## ✨ Особенности
-- 🔄 **Автоматическая конвертация**: Авто-перевод документа в CMYK, если необходимо.
-- 🎯 **Точность**: Работает с прозрачностью слоя, создавая максимально точное выделение непрозрачных пикселей.
-- ⚪ **Spot Channel**: Создание плашечного (Spot) канала `Spot_White`.
-- 🔍 **Треппинг**: Автоматическое сжатие выделения на 1 пиксель (треппинг) для предотвращения вылезания белой подложки за края изображения при печати.
-- 💾 **Сохранение**: Сохранение результата в TIFF (со сжатием LZW) с поддержкой плашечных каналов.
+## ✨ Features
+- 🔄 **Auto-Conversion**: Automatically converts the document to CMYK if needed.
+- 🎯 **Precision**: Analyzes layer transparency to create highly accurate selections of opaque pixels.
+- ⚪ **Spot Channel**: Creates a dedicated `Spot_White` spot channel.
+- 🔍 **Trapping**: Automatically contracts the selection by 1 pixel (trapping) to prevent the white underbase from bleeding past the image edges during printing.
+- 💾 **Export**: Saves the result as an LZW-compressed TIFF supporting spot channels.
 
-## 🛠 Установка
-1. Скачайте файл `SPOT_WHITE.jsx` из этого репозитория.
-2. Поместите его в папку скриптов Adobe Photoshop:
-   - **Windows:** `C:\Program Files\Adobe\Adobe Photoshop [Версия]\Presets\Scripts\`
-   - **macOS:** `/Applications/Adobe Photoshop [Версия]/Presets/Scripts/`
-3. Перезапустите Photoshop. Скрипт появится в меню `Файл` -> `Сценарии` (`File` -> `Scripts`).
+## 🛠 Installation
+1. Download the `SPOT_WHITE.jsx` file from this repository.
+2. Place it into your Adobe Photoshop scripts folder:
+   - **Windows:** `C:\Program Files\Adobe\Adobe Photoshop [Version]\Presets\Scripts\`
+   - **macOS:** `/Applications/Adobe Photoshop [Version]/Presets/Scripts/`
+3. Restart Photoshop. The script will now be available under `File` -> `Scripts`.
